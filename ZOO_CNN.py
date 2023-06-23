@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from keras_preprocessing.image import ImageDataGenerator
+from keras.preprocessing.image import ImageDataGenerator
 #from keras.applications.densenet import DenseNet201, preprocess_input
 from keras.applications.nasnet import NASNetMobile, NASNetLarge, preprocess_input
 from keras.models import Model, load_model
