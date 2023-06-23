@@ -1,4 +1,4 @@
-from keras_preprocessing.image import ImageDataGenerator
+from keras.preprocessing.image import ImageDataGenerator
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -34,7 +34,7 @@ def get_id(fname):
     return fname.replace(".png", "").split("/")[1]
 
 
-header = open('csv_de_Zeros.csv', 'r').readlines()[0]
+header = open('Zeros.csv', 'r').readlines()[0]
 
 with open('PREDIC.csv', 'w') as outfile:
     outfile.write(header)
