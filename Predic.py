@@ -23,7 +23,7 @@ test_generator = test_datagen.flow_from_directory(
 
 test_generator.reset()
 
-predictions = model.predict_generator(
+predictions = model.predict(
     test_generator,
     steps=test_generator.n / test_generator.batch_size,
     verbose=1)
